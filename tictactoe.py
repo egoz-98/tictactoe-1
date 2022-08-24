@@ -1,8 +1,21 @@
+
+
+from ast import Global
+
+
 Tablero = [[" ", " ", " "],[" ", " ", " "],[" ", " ", " "]]
 turno = 1
 win = False
 
 def check():
+    global Tablero
+
+    if (" " not in Tablero[0][0:3]) and (" " not in Tablero[1][0:3]) and (" " not in Tablero[2][0:3]):
+        print("Empate")
+        Tablero = [[" ", " ", " "],[" ", " ", " "],[" ", " ", " "]]
+        return False
+            
+
     if Tablero[0][0] == "X" and Tablero[1][1] == "X" and Tablero[2][2] == "X":
         print("Gana X")
         return True
