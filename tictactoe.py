@@ -1,8 +1,4 @@
 
-
-from ast import Global
-
-
 Tablero = [[" ", " ", " "],[" ", " ", " "],[" ", " ", " "]]
 turno = 1
 win = False
